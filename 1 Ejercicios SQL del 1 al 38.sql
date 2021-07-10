@@ -34,6 +34,8 @@ SELECT * FROM employees WHERE first_name LIKE 'Crist%' AND emp_no < 37126;
 SELECT * FROM employees WHERE first_name LIKE 'Crist%' AND emp_no <=37126;
 SELECT * FROM employees WHERE emp_no IN (494831,479832,599833,499832) AND gender IN ('M','F');
 SELECT * FROM employees WHERE emp_no IN (494831,479832,599833,499832) AND gender IN ('M','F') limit 10;
+SELECT * FROM employees AS emp WHERE emp.emp_no IN (494831,479832,599833,499832) AND gender IN ('M','F');
+SELECT emp.emp_no AS Numero, emp.first_name as Nome FROM employees AS emp WHERE emp.emp_no IN (494831,479832,599833,499832) AND gender IN ('M','F');
 
 
 
